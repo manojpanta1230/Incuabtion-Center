@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "HelveticaNowText";
+  src: url("webfonts/HelveticaNowText-Regular.woff2") format("woff2"), url("webfonts/HelveticaNowText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "HelveticaNowText", sans-serif;
+}
+
+.simple h2 {
+  font-size: 60px;
+}
+
+.button1 {
+  background-color: #2CAAE2;
+  padding: 10px 20px;
+  border-radius: 10px -6;
+  color: white;
+  border: none;
+}
+
+.padding-box {
+  margin: 40px 30px;
+}
+
+.scroll-text h2 {
+  color: #2D358C;
+  font-weight: 300;
+}
+.scroll-text .fa-rocket {
+  color: #81BB88;
+}
+
+.custom-card {
+  background: linear-gradient(135deg, #068ED2, #1E5BA9); /* blue gradient */
+  color: #fff;
+  border-radius: 40% 0% 40% 0%;
+  padding: 30px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.custom-card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.custom-card .number {
+  font-size: 31px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.custom-card .text {
+  font-size: 20px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 10px -2;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-badge {
+  background-color: #e0e0e0;
+  color: rgb(234, 106, 106);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.event-title {
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.faq-title {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.nav-pills {
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.nav-pills .nav-link {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px !important;
+  margin-bottom: 10px;
+  overflow: hidden;
+  /* ★ Box Shadow Effect Added */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-button {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 20px 24px;
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #000;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+/* Remove default Bootstrap arrow */
+.accordion-button::after {
+  display: none; /* hide default arrow */
+}
+
+/* Add custom + / − icons */
+.accordion-button::after {
+  content: "+";
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; /* push icon to right */
+}
+
+/* Change + to − when open */
+.accordion-button:not(.collapsed)::after {
+  content: "−";
+}
+
+.accordion-body {
+  padding: 0 24px 20px 24px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.accordion-collapse {
+  border: none;
+}
+
+.form-container {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+@import 'base';
+
+
+body{
+    font-family: $primary-font;
+  
+}
+.simple{
+    h2{
+        font-size: $font-size + 45;
+    }
+}
+.button1{
+    background-color: $primary-color-light;
+    padding: 10px 20px;
+    border-radius: $fixed_margin -6 ;
+    color: $text-color;
+    border: none;
+}
+.padding-box{
+    margin: $fixed_margin+30 $fixed_margin +20 ;
+}
+.scroll-text{
+   h2{
+    color: $primary-color;
+    font-weight: $font_weight;
+   }
+   .fa-rocket{
+    color:$tertiary-color-light-green ;
+   }
+}
+ .custom-card {
+  background: linear-gradient(135deg, #068ED2, #1E5BA9); /* blue gradient */
+  color: #fff;
+  border-radius: 40% 0% 40% 0%; 
+  padding: $fixed_margin + 20 ;
+  text-align: center;
+  margin: $fixed_margin + 5 0; 
+}
+
+    .custom-card .icon {
+      font-size: $font-size + 25;
+      margin-bottom: $font-size;
+    }
+    .custom-card .number {
+      font-size: $font-size + 16;
+      font-weight: 700;
+      margin-bottom: $font-size - 11;
+    }
+    .custom-card .text {
+      font-size: $font-size + 5 ;
+    }
+    // .back-container{
+    //      background-color: $services-color;
+    //      opacity: 6%;
+    // }
+ .event-card {
+         background: white;
+        border-radius: $fixed_gap -2;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .event-image {
+            width: 100%;
+            height: $fixed_gap * 20;
+            object-fit: cover;
+        }
+        .event-badge {
+            background-color: #e0e0e0;
+            color: rgb(234, 106, 106);
+            padding: 4px 12px;
+            border-radius: $fixed_gap - 6;
+            font-size: $font-size - 4;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: $fixed_gap + 2 ;
+        }
+        .event-title {
+            color: #333;
+            font-size: $font-size + 3;
+            font-weight: $font_weight + 100;
+            line-height: 1.4;
+            margin: 0;
+        }
+        .card-body {
+            padding: $fixed_gap + 10 ;
+        }
+
+        
+        .faq-title {
+            font-size: $font-size + 12;
+            font-weight: $font_weight + 400 ;
+            margin-bottom: $fixed_gap + 20 ;
+            color: #000;
+        }
+        
+        .nav-pills {
+            gap: $fixed_gap;
+            margin-bottom: $fixed_gap * 3;
+        }
+        
+        .nav-pills .nav-link {
+            background-color: #fff;
+            color: #333;
+            border: none;
+            padding: 12px 24px;
+            border-radius: $fixed_gap - 2;
+            font-weight: $font_weight + 300;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-pills .nav-link:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .nav-pills .nav-link.active {
+            background-color: #3f51b5;
+            color: #fff;
+        }
+        
+  .accordion-item {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px !important;
+    margin-bottom: 10px;
+    overflow: hidden;
+ ;
+    /* ★ Box Shadow Effect Added */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+        
+        .accordion-button {
+            background-color: #fff;
+            color: #000;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 20px 24px;
+            border: none;
+            box-shadow: none;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: #fff;
+            color: #000;
+            box-shadow: none;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+            border: none;
+        }
+        
+/* Remove default Bootstrap arrow */
+.accordion-button::after {
+    display: none; /* hide default arrow */
+}
+
+/* Add custom + / − icons */
+.accordion-button::after {
+    content: '+';
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* push icon to right */
+}
+
+/* Change + to − when open */
+.accordion-button:not(.collapsed)::after {
+    content: '−';
+}
+
+ .accordion-body {
+            padding: 0 24px 20px 24px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .accordion-collapse {
+            border: none;
+        }
+.form-container{
+    background-color: #f9f9f9;
+    padding: $fixed_gap + 20 ;
+    border-radius: $fixed_gap - 2 ;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'HelveticaNowText';
+    src: url('webfonts/HelveticaNowText-Regular.woff2') format('woff2'),
+        url('webfonts/HelveticaNowText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$primary-color: #2D358C;
+$primary-color-light: #2CAAE2;
+$primary-color-red: #EE232A;
+$secondary-color-light: #1787C5;
+$secondary-color-dark: #2267AB;
+$success-color-light-purple: #514388;
+$secondary-color-dark-purple: #6F427B;
+$secondary-color-light-red: #A14063;
+$secondary-color-dark-red: #BC3D59;
+$tertiary-color: #1E8490;
+$tertiary-color-light: #18BBB6;
+$tertiary-color-light-dark: #78CFE1;
+$tertiary-color-light-green: #81BB88;
+$tertiary-color-light-red: #F05476;
+$tertiary-color-dark-purple: #886BAF;
+$font-size: 15px;
+$services-color: #17A8DF;
+
+$text-color: white;
+
+$primary-font: 'HelveticaNowText', sans-serif;
+$secondary-font: "Bebas Neue", sans-serif;
+
+$fixed_margin: 10px;
+
+$font_weight: 300;
+
+$fixed_gap: 10px;
