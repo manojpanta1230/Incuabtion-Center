@@ -17,8 +17,13 @@ body {
   font-family: "HelveticaNowText", sans-serif;
 }
 
-.simple h2 {
+.simple h1 {
   font-size: 60px;
+  font-weight: 400;
+}
+.simple h2 {
+  font-size: 40px;
+  font-weight: 400;
 }
 
 .button1 {
@@ -30,7 +35,7 @@ body {
 }
 
 .padding-box {
-  margin: 40px 30px;
+  margin: 60px auto;
 }
 
 .scroll-text h2 {
@@ -42,37 +47,34 @@ body {
 }
 
 .custom-card {
-  background: linear-gradient(135deg, #068ED2, #1E5BA9); /* blue gradient */
+  background: linear-gradient(135deg, #068ED2, #1E5BA9);
   color: #fff;
   border-radius: 40% 0% 40% 0%;
   padding: 30px;
   text-align: center;
   margin: 15px 0;
 }
-
 .custom-card .icon {
   font-size: 40px;
   margin-bottom: 15px;
 }
-
 .custom-card .number {
   font-size: 31px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 4px;
 }
-
 .custom-card .text {
-  font-size: 20px;
+  font-size: 16px;
 }
 
+/* EVENT CARD */
 .event-card {
-  background: white;
-  border-radius: 10px -2;
+  background: #fff;
+  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
-
 .event-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -87,7 +89,7 @@ body {
 .event-badge {
   background-color: #e0e0e0;
   color: rgb(234, 106, 106);
-  padding: 4px 12px;
+  padding: 10px -6 12px;
   border-radius: 4px;
   font-size: 11px;
   font-weight: 600;
@@ -100,14 +102,15 @@ body {
   color: #333;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.4;
   margin: 0;
+  line-height: 1.4;
 }
 
 .card-body {
   padding: 20px;
 }
 
+/* FAQ TITLE */
 .faq-title {
   font-size: 27px;
   font-weight: 700;
@@ -115,11 +118,11 @@ body {
   color: #000;
 }
 
+/* NAV PILLS */
 .nav-pills {
   gap: 10px;
   margin-bottom: 30px;
 }
-
 .nav-pills .nav-link {
   background-color: #fff;
   color: #333;
@@ -129,23 +132,21 @@ body {
   font-weight: 600;
   transition: all 0.3s ease;
 }
-
 .nav-pills .nav-link:hover {
   background-color: #f0f0f0;
 }
-
 .nav-pills .nav-link.active {
   background-color: #3f51b5;
   color: #fff;
 }
 
+/* ACCORDION */
 .accordion-item {
   background-color: #fff;
   border: none;
   border-radius: 8px !important;
   margin-bottom: 10px;
   overflow: hidden;
-  /* ★ Box Shadow Effect Added */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -158,24 +159,23 @@ body {
   border: none;
   box-shadow: none;
 }
-
 .accordion-button:not(.collapsed) {
   background-color: #fff;
   color: #000;
-  box-shadow: none;
 }
-
 .accordion-button:focus {
   box-shadow: none;
   border: none;
 }
-
-/* Remove default Bootstrap arrow */
-.accordion-button::after {
-  display: none; /* hide default arrow */
+.accordion-button {
+  /* Hide default arrow */
 }
-
-/* Add custom + / − icons */
+.accordion-button::after {
+  display: none;
+}
+.accordion-button {
+  /* Custom icons */
+}
 .accordion-button::after {
   content: "+";
   width: 24px;
@@ -186,10 +186,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto; /* push icon to right */
+  margin-left: auto;
 }
-
-/* Change + to − when open */
 .accordion-button:not(.collapsed)::after {
   content: "−";
 }
@@ -208,6 +206,84 @@ body {
   background-color: #f9f9f9;
   padding: 30px;
   border-radius: 8px;
+}
+
+.faqs-container {
+  background-color: #E5EEF1;
+}
+
+.container .gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-card img {
+  width: 0px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.profile-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  margin: 0;
+}
+
+.profile-role {
+  font-size: 19px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.profile-text {
+  font-size: 15px;
+  color: #444;
+}
+
+.right-swipper .profile-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 368px;
+  width: 475px;
+}
+.right-swipper .profile-img {
+  width: 199px;
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.right-swipper .profile-name {
+  font-size: 20px;
+  color: #2CAAE2; /* Blue text like example */
+  margin: 5px 0;
+}
+.right-swipper .profile-role {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.right-swipper .profile-text {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.4;
 }
 
 /*# sourceMappingURL=output.css.map */
