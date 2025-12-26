@@ -273,15 +273,15 @@ color: #444;
 }
 
 .right-swipper {
+ background-color: #FEFEFE;
+ padding: $font-size; 
+.profile-card {
 
-    .profile-card {
-  background: #fff;
   padding: $fixed_margin + 20;
   border-radius: $font-size + 1;
   text-align: center;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
   display: flex;
-  flex-direction: column;
+
   margin: auto;
   height: 368px;
   width: 475px;
@@ -312,4 +312,16 @@ color: #444;
   color: #777;
   line-height: 1.4;
 }
+}
+.owl-carousel .owl-item img{
+    width: 220px;
+    height: 220px;
+}
+
+.mentor-card{
+   background-color: #f2f2f2;
+   border-radius: $fixed_margin - 2;
+   width: 175px;
+   right: 27%;
+    top: 51%;
 }
